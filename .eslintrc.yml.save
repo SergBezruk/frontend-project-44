@@ -1,0 +1,22 @@
+# .eslintrc.yml
+
+env:
+  node: true
+
+extends:
+  - "airbnb-base"
+
+plugins:
+  - "import"
+
+rules:
+  # Отключение правила no-console
+  no-console: "off"
+
+  # Разрешение импорта файлов без указания расширения
+  import/extensions:
+    - error
+    - ignorePackages
+    - js
+
+# Добавьте дополнительные правила, если необходимо

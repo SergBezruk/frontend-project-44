@@ -9,3 +9,8 @@ brain-games:
 # выполнит npm publish --dry-run для отладки публикации пакета.
 publish:
 	npm publish --dry-run
+
+# задача для запуска ESLint
+lint:
+	npx eslint .
+
