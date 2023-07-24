@@ -8,8 +8,12 @@
     "brain-games": "bin/brain-games.js"
   },
   "scripts": {
+    "start": "node ./bin/brain-games.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
