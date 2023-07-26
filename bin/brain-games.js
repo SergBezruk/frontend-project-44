@@ -1,13 +1,21 @@
 #!/usr/bin/env node;
 
-/*
-шебанг указывает операционной системе
-какой интерпретатор нужно использовать для выполнения скрипта.
-*/
+import runBrainEvenGame from '../games/brain-even.js';
+import runBrainCalcGame from '../games/brain-calc.js';
 
-import evenGames from '../scr/even.js';
+async function runGames() {
+  console.log('Welcome to the Brain Games!');
 
-console.log('Welcome to the Brain Games!');
+  const games = [runBrainEvenGame, runBrainCalcGame];
 
-const even = evenGames();
-console.log(even);
+  const playerName = await playerGreeting();
+  console.log(`Hello, ${playerName}!\n`);
+
+  for (const game of games) {
+    await game();
+  }
+
+  console.log(`Congratulations, ${playerName}!`);
+}
+
+runGames();
