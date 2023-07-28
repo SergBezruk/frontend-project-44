@@ -35,6 +35,5 @@ const checkAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 playGame(gameName, gameDescription, generateQuestion, checkAnswer);
 
 export default async function runBrainCalcGame() {
-  console.log('Running the Brain Calc game...');
   // Логика игры Brain Calc
 }

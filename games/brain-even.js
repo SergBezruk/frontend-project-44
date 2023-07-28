@@ -17,6 +17,5 @@ const checkAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 playGame(gameName, gameDescription, generateQuestion, checkAnswer);
 
 export default async function runBrainEvenGame() {
-  console.log('Running the Brain Even game...');
   // Логика игры Brain Even
 }
